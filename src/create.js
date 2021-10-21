@@ -15,7 +15,7 @@ function getFormulario(e){
 	//si es taabajo no la corre y hay quilombo 
 	// divSelect.mostrarTareas()
 	let infoName = this.nameTask.value;
-	if (infoName=='') {return alert('nombre invalido')}
+	if (infoName=='') {return alert('nombre invalido')};
 	let infoTask = this.descTask.value;
 	let infoDate = this.dateTask.value ;
 	let numId = crearId(clases.almacenar);
@@ -24,34 +24,34 @@ function getFormulario(e){
 	elem.setTitle = infoName;
 	elem.setDesc = infoTask;
 	elem.setId = numId;
-	elem.setDueDate = infoDate
+	elem.setDueDate = infoDate;
 	elem.guardarInfo();
 	// elem.guardarInfo();			
 	 let info = elem.getLeer;
 	// console.log(info)
-	container.prepend(mostrarDatos(elem))
-	localStorage.guardar_LocalStorage()
+	container.prepend(mostrarDatos(elem));
+	localStorage.guardar_LocalStorage();
 	// divSelect.colocarTareaEn(info);
 	
 	
 }
 
 function createProject(e){
-	e.preventDefault()
+	e.preventDefault();
 		
-	let nameProject = this.nameProject.value
-	let nameValido = verificarNombreProject(nameProject)
-	if(!nameValido)return
+	let nameProject = this.nameProject.value;
+	let nameValido = verificarNombreProject(nameProject);
+	if(!nameValido)return;
 	
-	let project = new clases.Project()	
-	project.setNumId = crearId(clases.almacenarProject)
-	project.setNameProject = nameProject
-	project.guardar()	
+	let project = new clases.Project();	
+	project.setNumId = crearId(clases.almacenarProject);
+	project.setNameProject = nameProject;
+	project.guardar();	
 	
 	console.log(project.getLeer);
 	// console.log(project.createSelect())
-	 containerProjectssSelect.appendChild(createSelect(project.getLeer))
-	 localStorage.guardar_LocalStorageProject()
+	 containerProjectssSelect.appendChild(createSelect(project.getLeer));
+	 localStorage.guardar_LocalStorageProject();
 }
 
 //recorre el array que se le pase para crear un id
@@ -61,7 +61,7 @@ function crearId(array){
 			numId= 0;
 		}else{
 			let lastId = array[array.length-1];			
-			numId = parseInt(lastId.numId) +1	;		
+			numId = parseInt(lastId.numId) +1;		
 		}
 		
 		return numId;
@@ -72,11 +72,11 @@ function verificarNombreProject(nameProject){
 	let valido=true;
 	clases.almacenarProject.forEach(elem=>{
 		if(elem.nameProject==nameProject){
-			alert('ya esxiste un proyecto con ese nombre')			
-			valido=false			
+			alert('ya esxiste un proyecto con ese nombre');			
+			valido=false;			
 		}
 	})
-	return valido
+	return valido;
 }
 
 
@@ -126,37 +126,37 @@ function createSelect(project){
 	h2.innerText=  project.nameProject;
 	div.appendChild(h2);
 	div.addEventListener('click',()=>{		
-		divSelect.mostrarProjectss()
+		divSelect.mostrarProjectss();
 		// let elem = this.mostrarProject
 		
 		// showTareaProject(elem.nameProject)
 	
 			mostrarProject(project.nameProject);
-			showTareaProject(project)
+			showTareaProject(project);
 			menu.showMenu();
 		
-		console.log(project)
+		console.log(project);
 		})
 		
-	return (div)
+	return (div);
 }
 
 //muestra en el dom el projecto y sus tareas
 function showTareaProject(project){
 	
-divSelect.mostrarProjectss()
-mostrarProject(project.nameProject)
+divSelect.mostrarProjectss();
+mostrarProject(project.nameProject);
    clases.almacenar.forEach(elem=>{
 	
 	   if(elem.project==project.nameProject){
 		   let tarea = mostrarDatos(elem);
-		   containerProjectss.appendChild(tarea)
+		   containerProjectss.appendChild(tarea);
 	   }
 })
 }
 function mostrarDatos(elem){
 	// console.log(elem[0],elem[1])
-let cont = document.createElement('DIV')
+let cont = document.createElement('DIV');
 let miniCont = document.createElement('DIV');
 let descDateDiv = document.createElement('DIV');
 let btnDiv = document.createElement('DIV');
@@ -166,7 +166,7 @@ let dateTask = document.createElement('P');
 let btnDelete = document.createElement('P');
 let btnEdit = document.createElement('P');
 let btnCheck = document.createElement('input');
-btnCheck.setAttribute('type','checkbox')
+btnCheck.setAttribute('type','checkbox');
 cont.classList.add('divTarea');
 descDateDiv.classList.add('descDate');
 btnDiv.classList.add('btnDiv');
@@ -182,37 +182,37 @@ dateTask.innerText = elem.dueDate;
 
 btnDiv.appendChild(btnDelete);
 btnDiv.appendChild(btnEdit);
-nameTask.appendChild(btnCheck)
+nameTask.appendChild(btnCheck);
 descDateDiv.appendChild(descTask);
 descDateDiv.appendChild(dateTask);
 cont.appendChild(nameTask);
 miniCont.appendChild(descDateDiv);
 miniCont.appendChild(btnDiv);
-cont.appendChild(miniCont)
+cont.appendChild(miniCont);
 
 if(elem.complete)btnCheck.checked=true
 	btnCheck.addEventListener('click',()=>{
 		if(elem.complete){
-			console.log('cjeck')
+			console.log('cjeck');
 			elem.complete=false;
 			cont.classList.remove('completeTask');
 		}else{
 			
 			elem.complete=true;
-			cont.classList.add('completeTask')
+			cont.classList.add('completeTask');
 		}
 	})
 	
 btnEdit.addEventListener('click',()=>{
 	formularioEdit.style.visibility='visible';
-	edit.editHijo(elem)
-	localStorage.guardar_LocalStorage()
+	edit.editHijo(elem);
+	localStorage.guardar_LocalStorage();
 })
 btnDelete.addEventListener('click',()=>{
-	console.log('funcion!!')
-	delet.eliminarElemento(cont)
+	
+	delet.eliminarElemento(cont);
 	delet.removerHijo(elem.numId);
-	localStorage.guardar_LocalStorage()
+	localStorage.guardar_LocalStorage();
 })	
 
 return(cont)
@@ -243,7 +243,7 @@ function mostrarProject(nameProject){
 		console.log('visible');
 		tareaProjectDom.style.visibility='visible';
 		projectName.innerText= nameProject;
-		localStorage.guardar_LocalStorage()
+		localStorage.guardar_LocalStorage();
 	})
 	btnEliminar.addEventListener('click',()=>{
 		
@@ -261,7 +261,7 @@ function recorrerAlmacenarProject(){
 	
 	containerProjectssSelect.innerText='';
 	clases.almacenarProject.forEach(elem=>{
-		containerProjectssSelect.appendChild(createSelect(elem))
+		containerProjectssSelect.appendChild(createSelect(elem));
 	})
 }
 

@@ -9,12 +9,12 @@ const localStorage = require('./localStorage')
 function editHijo(elem){
 	
 	//si la tarea tiene un Projecto aparece el nombre del projecto
-	projectNameEdit.innerText= elem.numId
-	let form = document.formularioEdit
+	projectNameEdit.innerText= elem.numId;
+	let form = document.formularioEdit;
 	// guardarId= elem.numId
-	form.nameTaskEdit.value = elem.title
-	form.descTaskEdit.value = elem.desc
-	form.dateTaskEdit.value = elem.dueDate
+	form.nameTaskEdit.value = elem.title;
+	form.descTaskEdit.value = elem.desc;
+	form.dateTaskEdit.value = elem.dueDate;
 }
 
 //recibe los datos del formulario de edicion, 
@@ -30,7 +30,7 @@ function actualziarDatos(e){
 			elem.dueDate = form.dateTaskEdit.value;
 			// console.log(elem.getLeer)
 		
-			divSelect.insertarDom(elem.project)
+			divSelect.insertarDom(elem.project);
 	}}
 	
 
@@ -38,7 +38,7 @@ function actualziarDatos(e){
 )
 localStorage.guardar_LocalStorage()
 
-document.formularioEdit.style.visibility = 'hidden'
+document.formularioEdit.style.visibility = 'hidden';
 
 
 }

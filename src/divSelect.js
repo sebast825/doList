@@ -25,14 +25,14 @@ function mostrarTareas(){
 function mostrarToday(){
 	// e.preventDefault()
 	mostrar();
-	mostrarTotalToday()
-	activeSelect('today')
+	mostrarTotalToday();
+	activeSelect('today');
 	containerToday.style.visibility = 'visible';
 
 }
 function mostrarProjectss(){
 	// e.preventDefault()
-	activeSelect('project')
+	activeSelect('project');
 	containerProjectss.innerText='';
 	mostrar();
 
@@ -51,7 +51,7 @@ function activeSelect(elem){
 	}else if(elem=="project"){
 		allProjects.classList.add('class');
 	}else{
-		console.log('errro colorSelect')
+		console.log('errro colorSelect');
 	}
 	
 }
@@ -60,11 +60,11 @@ function activeSelect(elem){
 //se usa al borrar
 function colocarTareaEnActualizado(){
 	if(container.style.visibility=='visible'){
-		return true
+		return true;
 	}else if(containerToday.style.visibility=='visible'){
-		return false
+		return false;
 	}else if(containerProjectss.style.visibility=='visible'){		
-		return undefined
+		return undefined;
 	}else{
 		console.log('colocarTareaEnActualizado Error')
 	}
@@ -77,7 +77,7 @@ function mostrarTotalTareas(){
 	clases.almacenar.forEach(elem=>{
 		// console.log('mosstartareastotales')
 		let tarea = create.mostrarDatos(elem);
-		container.prepend(tarea)
+		container.prepend(tarea);
 	})
 }
 
@@ -88,8 +88,8 @@ function mostrarTotalToday(){
 	clases.almacenar.forEach(elem=>{
 		let verFecha = verificarFecha(elem);
 		if(verFecha){
-			let obj = create.mostrarDatos(elem)
-			containerToday.prepend(obj)
+			let obj = create.mostrarDatos(elem);
+			containerToday.prepend(obj);
 		}		
 	})
 }
@@ -103,7 +103,7 @@ function verificarFecha(elem){
 		let atr = fecha.htmlToday(elem.dueDate)
 		if(atr){
 			
-			return true	
+			return true;
 		}
 }
 }
@@ -111,15 +111,15 @@ function verificarFecha(elem){
 function insertarDom(nameProject){
 	let func = colocarTareaEnActualizado()
 	if(func == true){
-		mostrarTareas()
+		mostrarTareas();
 	}else if (func == false){
 		mostrarToday()
 	}else if (func == undefined){
 		// console.log('hasta aca',nameProject)
-		bsucarPorjecto(nameProject)
+		bsucarPorjecto(nameProject);
 		// console.log('atr')
 	}else{
-		console.log('erro insertarDom')
+		console.log('erro insertarDom');
 	}
 }
 
@@ -129,7 +129,7 @@ function bsucarPorjecto(name){
 		
 		if(elem.nameProject==name){
 			// console.log('buscpro',elem.nameProject)
-			create.showTareaProject(elem)
+			create.showTareaProject(elem);
 		}
 	})
 }

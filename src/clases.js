@@ -14,7 +14,7 @@ let almacenarProject=[];
 
 let Project = class Project{
 	constructor(nameProject,numId){
-		this.numId = numId
+		this.numId = numId,
 		this.nameProject = nameProject
 	
 	}
@@ -25,10 +25,10 @@ let Project = class Project{
 		this.nameProject = np;
 	}
 	get getLeer(){
-		return {numId : this.numId, nameProject : this.nameProject}
+		return {numId : this.numId, nameProject : this.nameProject};
 	}
 	guardar(){		
-		almacenarProject.push(this.getLeer)		
+		almacenarProject.push(this.getLeer);		
 	}
 	
 	
@@ -44,19 +44,19 @@ let Tarea = class Tarea{
 	this.complete = complete	
 	}
 	set setId(id){
-		return this.numId = id
+		return this.numId = id;
 	}
 	set setTitle(title){
-		return this.title = title
+		return this.title = title;
 	}
 	set setDesc(desc){
-		return this.desc = desc
+		return this.desc = desc;
 	}
 	set setDueDate(dueDate){
-		return this.dueDate = dueDate
+		return this.dueDate = dueDate;
 	}
 	set setComplete(complete){
-		return this.complete = complete
+		return this.complete = complete;
 	}
 	guardarInfo(){
 		
@@ -64,7 +64,7 @@ let Tarea = class Tarea{
 		
 	}	
 	get getLeer(){
-		return  {numId:this.numId,  title:this.title,desc:this.desc, dueDate:this.dueDate, complete:this.complete} 
+		return  {numId:this.numId,  title:this.title,desc:this.desc, dueDate:this.dueDate, complete:this.complete};
 		
 	}
 	
@@ -77,7 +77,7 @@ let TareaProject = class TareaProject extends Tarea{
 		this.project = project
 	}
 	set setNameProject(project){
-		this.project = project	
+		this.project = project;
 	}
 	guardar(){		
 		
@@ -86,9 +86,9 @@ let TareaProject = class TareaProject extends Tarea{
 		// console.log(almacenar)	
 	}
 	get getLeer(){
-		 let c = super.getLeer
-		 c.project = this.project		
-		return c
+		 let c = super.getLeer;
+		 c.project = this.project;	
+		return c;
 	}
 	
 }

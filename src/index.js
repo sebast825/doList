@@ -33,9 +33,9 @@ todaySelect.addEventListener('click',()=>{
 } )
 
 
-localStorage.recuperar_LocalSotrage()
+localStorage.recuperar_LocalSotrage();
 
 
 //carga lo del local sotrage
-create.recorrerAlmacenarProject()
+create.recorrerAlmacenarProject();
 divSelect.mostrarTareas();

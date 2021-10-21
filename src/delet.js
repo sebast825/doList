@@ -28,10 +28,10 @@ function borrarTarea(nameProject){
 function borrarProject(nameProject){
 	//borra proyecto
 	clases.almacenarProject.forEach((elem,index,object)=>{
-		console.log('afuasdasdasdera',elem)
+		// console.log('afuasdasdasdera',elem)
 	if(elem.nameProject==nameProject){
 		object.splice(index,1);		
-		console.log('deasd',clases.almacenarProject)
+		// console.log('deasd',clases.almacenarProject)
 				
 	}
 	})
@@ -45,13 +45,13 @@ function eliminarElemento(cont){
 		
 	let func = divSelect.colocarTareaEnActualizado()
 	if(func==true){
-		container.removeChild(cont)
+		container.removeChild(cont);
 	}else if(func == false){
-		containerToday.removeChild(cont)
+		containerToday.removeChild(cont);
 	}else if (func == undefined){
-		containerProjectss.removeChild(cont)
+		containerProjectss.removeChild(cont);
 	}else{
-		console.log('colocarTareaEnActualizado Error')
+		console.log('colocarTareaEnActualizado Error');
 	}
 
 
