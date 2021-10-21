@@ -164,7 +164,7 @@
 			gap: 0.2rem;
 			// z-index: 100;
 			display: flex;
-			justify-content: center;
+			justify-content: flex-end;
 			align-items: center;
 			flex-direction: column;
 			top: 0;
@@ -178,15 +178,17 @@
 				
 			}
 			input{
-				width: 25rem;
+				width: 20rem;
 			}
 			button{
 				
 				width: 10rem;
 			}
-			input,textarea{
+			input,textarea, .date{
 				align-self: flex-end;
+				width: 100%;
 			}
+
 			.date{
 				width: 8rem;
 				align-self: flex-end;
@@ -382,6 +384,10 @@
 		.colorActive{
 			opacity: 0.4;
 			transition: all 0.5s linear;
+		}
+
+		.inForm{
+			width: 90%;
 		}
 		.container, .containerToday, .containerProjectss {
 			

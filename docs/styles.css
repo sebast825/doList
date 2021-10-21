@@ -182,9 +182,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -206,7 +206,7 @@
 
 .contenedorTotal .formsSecundarios .formularioEdit .inForm input,
 .contenedorTotal .formsSecundarios .tareaProject .inForm input {
-  width: 25rem;
+  width: 20rem;
 }
 
 .contenedorTotal .formsSecundarios .formularioEdit .inForm button,
@@ -214,11 +214,13 @@
   width: 10rem;
 }
 
-.contenedorTotal .formsSecundarios .formularioEdit .inForm input, .contenedorTotal .formsSecundarios .formularioEdit .inForm textarea,
+.contenedorTotal .formsSecundarios .formularioEdit .inForm input, .contenedorTotal .formsSecundarios .formularioEdit .inForm textarea, .contenedorTotal .formsSecundarios .formularioEdit .inForm .date,
 .contenedorTotal .formsSecundarios .tareaProject .inForm input,
-.contenedorTotal .formsSecundarios .tareaProject .inForm textarea {
+.contenedorTotal .formsSecundarios .tareaProject .inForm textarea,
+.contenedorTotal .formsSecundarios .tareaProject .inForm .date {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  width: 100%;
 }
 
 .contenedorTotal .formsSecundarios .formularioEdit .inForm .date,
@@ -412,6 +414,9 @@
     opacity: 0.4;
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
+  }
+  .contenedorTotal .inForm {
+    width: 90%;
   }
   .contenedorTotal .container .divTarea, .contenedorTotal .containerToday .divTarea, .contenedorTotal .containerProjectss .divTarea {
     padding: 0.5rem;
