@@ -10,7 +10,7 @@ const vemosTexto = document.querySelector('.vemosTexto');
 const tareasSelect = document.querySelector('.tareasSelect');
 const todaySelect = document.querySelector('.todaySelect');
 const containerProjectssSelect = document.querySelector('.containerProjectssSelect')
-const formsPrincipales = document.querySelector('.formsPrincipales');
+
 
 
 document.formulario.addEventListener('submit',create.getFormulario);
@@ -21,17 +21,8 @@ document.createProject.addEventListener('submit',create.createProject);
 document.tareaProject.addEventListener('submit',create.tareaProject);
 formsBarra.addEventListener('click',menu.showMenu)
 
-//para esconde el menu
-vemosTexto.addEventListener('click',ocultarMenu,capture=true)
 
-function ocultarMenu(e){
-	if(formsPrincipales.classList.contains('formsPrincpales-oculto')){
-		e.stopPropagation()
-		menu.showMenu()
-	}
-	
-	
-}
+
 tareasSelect.addEventListener('click',function(){	
 	divSelect.mostrarTareas();
 	menu.showMenu();
