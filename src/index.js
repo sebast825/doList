@@ -10,7 +10,7 @@ const vemosTexto = document.querySelector('.vemosTexto');
 const tareasSelect = document.querySelector('.tareasSelect');
 const todaySelect = document.querySelector('.todaySelect');
 const containerProjectssSelect = document.querySelector('.containerProjectssSelect')
-		
+const formsPrincipales = document.querySelector('.formsPrincipales');
 
 
 document.formulario.addEventListener('submit',create.getFormulario);
@@ -25,8 +25,11 @@ formsBarra.addEventListener('click',menu.showMenu)
 vemosTexto.addEventListener('click',ocultarMenu,capture=true)
 
 function ocultarMenu(e){
-	e.stopPropagation()
-	menu.showMenu()
+	if(formsPrincipales.classList.contains('formsPrincpales-oculto')){
+		e.stopPropagation()
+		menu.showMenu()
+	}
+	
 	
 }
 tareasSelect.addEventListener('click',function(){	

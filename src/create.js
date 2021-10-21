@@ -209,7 +209,7 @@ btnEdit.addEventListener('click',()=>{
 	localStorage.guardar_LocalStorage()
 })
 btnDelete.addEventListener('click',()=>{
-	
+	console.log('funcion!!')
 	delet.eliminarElemento(cont)
 	delet.removerHijo(elem.numId);
 	localStorage.guardar_LocalStorage()
