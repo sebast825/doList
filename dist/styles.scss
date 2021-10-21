@@ -1,0 +1,441 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+// $heighContSelect:7rem
+.contenedorTotal{
+	display: flex;
+	 position: relative;
+	height: 100vh;
+	
+	.forms-barra{
+		
+		width: 0;
+	}
+
+	.formsPrincpales{
+		
+		width: 25vw;
+		
+		display: flex;
+		flex-direction: column;
+		padding-top: 1.5rem;
+		background-color: #f32;
+		align-items: center;
+		border-right: white 2px;
+		border-style:groove;
+		
+		.titleForms{
+			margin-top: -1rem;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-content: space-around;
+			// gap: 1rem;
+		}
+		.btn-principales{
+			// text-transform: none;
+			background-color: #fee;
+			color: #000;
+			// border: 2px solid black;
+			
+		}
+		.formulario,
+		.createProject{
+			
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			margin: 0.5rem 0;
+		}
+		a{
+			text-decoration: none;
+			text-transform: none;
+			color: black;
+		
+		}
+
+		.tareasSelect, .todaySelect, .allProjects{
+			border-bottom:  solid white;
+			border-right:none ;
+			border-left: none;
+			padding: 1rem 1rem;	
+			padding-bottom:0 ;		
+			margin-left: -0.5rem;
+			padding-bottom: 0.3rem;			
+			:hover{
+				color: #fff;
+			}
+		} 
+		.allProjects{
+			border: none;
+		}
+		.class{
+			background-color: #4be;
+			// background-color: black;
+			color: black;
+			border:  solid white; 
+			border-radius: 10px;
+			
+		}
+		
+		.containerProjectssSelect{
+			
+			border-bottom:  solid white;
+			max-height: 7rem;
+			overflow: hidden;
+			
+			
+				overflow-y:scroll;
+		
+			scroll-behavior: smooth;
+			/* Track */
+			&::-webkit-scrollbar{
+				width: 0.5rem;
+				height: 0.3rem;
+				
+				
+			}
+			&::-webkit-scrollbar-track {
+				background: #f1f1f1;
+			}
+			
+			/* Handle */
+			&::-webkit-scrollbar-thumb {
+				background: #000;
+			}
+			
+			/* Handle on hover */
+			&::-webkit-scrollbar-thumb:hover {
+				background: #468;
+			}
+			
+		}
+		
+	
+
+		.divTarea{
+			background-color: white;
+		}
+		.divProject{
+			background-color: red;
+		}
+		.divProjectSelect{
+			max-width: 7rem;
+			padding: 0 0.3rem ;
+			border-bottom: 1px solid white;
+			// background-color: #cff;
+			overflow-x: hidden;
+			:hover{
+				color: white ;
+			}
+		
+			
+		}
+	}
+
+	.formsSecundarios{
+
+		.formularioEdit,
+		.tareaProject{
+			visibility:hidden;
+			background-color: rgba(0,0,0,0.7);
+			position: fixed;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 50;
+				
+			.inForm{
+				
+			border: 2px solid white;	
+			// position: absolute;
+			background-color: #4be;
+			padding: 1rem;
+			gap: 0.2rem;
+			// z-index: 100;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			label{
+				align-self: flex-start;
+				
+				
+				
+			}
+			input{
+				width: 25rem;
+			}
+			button{
+				
+				width: 10rem;
+			}
+			input,textarea{
+				align-self: flex-end;
+			}
+			.date{
+				width: 8rem;
+				align-self: flex-end;
+			}
+			
+			}
+
+			
+		}
+		}
+		.vemosTexto{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			
+			
+			.vemos{
+			background-color: black;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			//es el pedazo que esta arriba
+			
+			.container, .containerToday, .containerProjectss {
+				
+				visibility: visible;
+				width: 100% ;
+				height: 100%;
+				max-height:  100%;				
+				 padding-top:3rem ;
+				 padding-bottom: 3rem;
+				
+				position: absolute;
+				background-color: #4be;
+				overflow: hidden;
+				overflow-y: scroll;
+				scroll-behavior: smooth;
+			/* Track */
+			&::-webkit-scrollbar{
+				width: 0.5rem;
+				height: 0.3rem;
+				
+				
+			}
+			&::-webkit-scrollbar-track {
+				background: #f1f1f1;
+			}
+			
+			/* Handle */
+			&::-webkit-scrollbar-thumb {
+				background: #000;
+			}
+			
+			/* Handle on hover */
+			&::-webkit-scrollbar-thumb:hover {
+				background: #468;
+			}
+			
+				
+				.divTarea{
+					margin: 0.5rem 5rem;
+					// padding: 0 5rem;
+					padding-bottom: 0.5rem;
+					border-bottom: 1px solid white;
+					h2{
+						margin-left: -1rem;
+						
+					}
+					
+					
+					.miniCont{
+						display: flex;
+						justify-content: space-between;
+					}
+					
+					.descDate{
+						width: 90%;
+						display: flex;
+						justify-content: space-around;
+						align-content: space-around;
+						
+						.descTask{
+							min-width: 80%;
+							max-width: 80%;
+							
+						}
+						.dateTask{
+							min-width: 20%;
+						}
+						
+					}
+					.btnDiv{
+						min-width:10% ;
+						display: flex;
+						justify-content: space-around;
+						p{
+							:hover{
+								color: #ccc;
+							}
+						}
+					}
+				}
+				
+			}
+			.containerProjectss{
+				padding-top: 0px;
+			}
+			
+			.divProject{
+				background-color: RED;
+				display: flex;
+				gap: 2rem;
+				padding: 1rem 3rem;
+				h2{
+					font-size: 3rem;
+				}
+				p{
+					font-size: 1.7rem;
+					color: white;
+					// background-color: white;
+					:hover{
+						color: #ccc;
+					}
+				}
+				
+			}
+			.completeTask{
+				text-decoration: line-through;
+			}
+			
+		}
+		
+	}
+		
+		
+}
+
+
+@media screen and (max-width: 750px) {
+	.contenedorTotal{
+		
+		.forms-barra{
+		margin-top: 0.5rem;
+		right: 10%;
+		position: absolute;
+		width: 100%;
+		 display: flex;
+		 justify-content:flex-end ;
+		 align-items: center;
+		font-size: 1.4rem;
+		z-index: 500;
+		:hover{
+			color: #ccc;
+		}		
+		
+		}
+		.barraColor{
+			color: #eee;
+		}
+		.formsPrincpales{
+			position: relative;
+			
+			width: 100%;
+			 left: -300px;
+			margin-right:  25%;
+			padding: 10% 10% ;
+			
+			z-index: 250;
+			
+			background-color: red;
+			transition:  all 0.6s ease-in;
+		}
+		.formsPrincpales-oculto{
+			
+			 left: 0px;
+			
+			transition:  all 0.6s linear;
+		
+			
+		}
+
+		.vemosTexto{
+			
+			 position: absolute	;
+			
+	
+			transition:  all 0.5s linear;
+			
+			
+		}
+		
+		.colorActive{
+			opacity: 0.4;
+			transition: all 0.5s linear;
+		}
+		.container, .containerToday, .containerProjectss {
+			
+			
+			.divTarea{
+			
+				padding: 0.5rem; 
+				margin-left:2rem !important ;
+				
+				width: 80%;
+				height: auto;
+				
+				h2{
+					margin: -10px;
+					padding: 0px;
+				}
+
+				.miniCont{
+					display: flex;
+					margin: 0.5rem 0;
+				
+					justify-content: space-between;
+				}
+				
+				.descDate{
+					width: 90%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					align-content: space-around;
+					
+					.descTask{
+						min-width: auto;
+						max-width: min-content;
+						
+					}
+					.dateTask{
+						min-width: min-content;
+					}
+					
+				}
+				.btnDiv{
+					min-width:10% ;
+					display: flex;
+					justify-content: space-around;
+					gap: 0.5rem;
+					p{
+						:hover{
+							color: #ccc;
+						}
+					}
+				}
+				}	
+		}
+		
+	}
+}

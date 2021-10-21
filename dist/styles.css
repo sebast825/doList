@@ -1,0 +1,473 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contenedorTotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+
+.contenedorTotal .forms-barra {
+  width: 0;
+}
+
+.contenedorTotal .formsPrincpales {
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1.5rem;
+  background-color: #f32;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: white 2px;
+  border-style: groove;
+}
+
+.contenedorTotal .formsPrincpales .titleForms {
+  margin-top: -1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.contenedorTotal .formsPrincpales .btn-principales {
+  background-color: #fee;
+  color: #000;
+}
+
+.contenedorTotal .formsPrincpales .formulario,
+.contenedorTotal .formsPrincpales .createProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 0.5rem 0;
+}
+
+.contenedorTotal .formsPrincpales a {
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+}
+
+.contenedorTotal .formsPrincpales .tareasSelect, .contenedorTotal .formsPrincpales .todaySelect, .contenedorTotal .formsPrincpales .allProjects {
+  border-bottom: solid white;
+  border-right: none;
+  border-left: none;
+  padding: 1rem 1rem;
+  padding-bottom: 0;
+  margin-left: -0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.contenedorTotal .formsPrincpales .tareasSelect :hover, .contenedorTotal .formsPrincpales .todaySelect :hover, .contenedorTotal .formsPrincpales .allProjects :hover {
+  color: #fff;
+}
+
+.contenedorTotal .formsPrincpales .allProjects {
+  border: none;
+}
+
+.contenedorTotal .formsPrincpales .class {
+  background-color: #4be;
+  color: black;
+  border: solid white;
+  border-radius: 10px;
+}
+
+.contenedorTotal .formsPrincpales .containerProjectssSelect {
+  border-bottom: solid white;
+  max-height: 7rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.contenedorTotal .formsPrincpales .containerProjectssSelect::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.3rem;
+}
+
+.contenedorTotal .formsPrincpales .containerProjectssSelect::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.contenedorTotal .formsPrincpales .containerProjectssSelect::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+.contenedorTotal .formsPrincpales .containerProjectssSelect::-webkit-scrollbar-thumb:hover {
+  background: #468;
+}
+
+.contenedorTotal .formsPrincpales .divTarea {
+  background-color: white;
+}
+
+.contenedorTotal .formsPrincpales .divProject {
+  background-color: red;
+}
+
+.contenedorTotal .formsPrincpales .divProjectSelect {
+  max-width: 7rem;
+  padding: 0 0.3rem;
+  border-bottom: 1px solid white;
+  overflow-x: hidden;
+}
+
+.contenedorTotal .formsPrincpales .divProjectSelect :hover {
+  color: white;
+}
+
+.contenedorTotal .formsSecundarios .formularioEdit,
+.contenedorTotal .formsSecundarios .tareaProject {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+.contenedorTotal .formsSecundarios .formularioEdit .inForm,
+.contenedorTotal .formsSecundarios .tareaProject .inForm {
+  border: 2px solid white;
+  background-color: #4be;
+  padding: 1rem;
+  gap: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.contenedorTotal .formsSecundarios .formularioEdit .inForm label,
+.contenedorTotal .formsSecundarios .tareaProject .inForm label {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.contenedorTotal .formsSecundarios .formularioEdit .inForm input,
+.contenedorTotal .formsSecundarios .tareaProject .inForm input {
+  width: 25rem;
+}
+
+.contenedorTotal .formsSecundarios .formularioEdit .inForm button,
+.contenedorTotal .formsSecundarios .tareaProject .inForm button {
+  width: 10rem;
+}
+
+.contenedorTotal .formsSecundarios .formularioEdit .inForm input, .contenedorTotal .formsSecundarios .formularioEdit .inForm textarea,
+.contenedorTotal .formsSecundarios .tareaProject .inForm input,
+.contenedorTotal .formsSecundarios .tareaProject .inForm textarea {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.contenedorTotal .formsSecundarios .formularioEdit .inForm .date,
+.contenedorTotal .formsSecundarios .tareaProject .inForm .date {
+  width: 8rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.contenedorTotal .vemosTexto {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contenedorTotal .vemosTexto .vemos {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.contenedorTotal .vemosTexto .vemos .container, .contenedorTotal .vemosTexto .vemos .containerToday, .contenedorTotal .vemosTexto .vemos .containerProjectss {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: absolute;
+  background-color: #4be;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.contenedorTotal .vemosTexto .vemos .container::-webkit-scrollbar, .contenedorTotal .vemosTexto .vemos .containerToday::-webkit-scrollbar, .contenedorTotal .vemosTexto .vemos .containerProjectss::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.3rem;
+}
+
+.contenedorTotal .vemosTexto .vemos .container::-webkit-scrollbar-track, .contenedorTotal .vemosTexto .vemos .containerToday::-webkit-scrollbar-track, .contenedorTotal .vemosTexto .vemos .containerProjectss::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.contenedorTotal .vemosTexto .vemos .container::-webkit-scrollbar-thumb, .contenedorTotal .vemosTexto .vemos .containerToday::-webkit-scrollbar-thumb, .contenedorTotal .vemosTexto .vemos .containerProjectss::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+.contenedorTotal .vemosTexto .vemos .container::-webkit-scrollbar-thumb:hover, .contenedorTotal .vemosTexto .vemos .containerToday::-webkit-scrollbar-thumb:hover, .contenedorTotal .vemosTexto .vemos .containerProjectss::-webkit-scrollbar-thumb:hover {
+  background: #468;
+}
+
+.contenedorTotal .vemosTexto .vemos .container .divTarea, .contenedorTotal .vemosTexto .vemos .containerToday .divTarea, .contenedorTotal .vemosTexto .vemos .containerProjectss .divTarea {
+  margin: 0.5rem 5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid white;
+}
+
+.contenedorTotal .vemosTexto .vemos .container .divTarea h2, .contenedorTotal .vemosTexto .vemos .containerToday .divTarea h2, .contenedorTotal .vemosTexto .vemos .containerProjectss .divTarea h2 {
+  margin-left: -1rem;
+}
+
+.contenedorTotal .vemosTexto .vemos .container .divTarea .miniCont, .contenedorTotal .vemosTexto .vemos .containerToday .divTarea .miniCont, .contenedorTotal .vemosTexto .vemos .containerProjectss .divTarea .miniCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contenedorTotal .vemosTexto .vemos .container .divTarea .descDate, .contenedorTotal .vemosTexto .vemos .containerToday .divTarea .descDate, .contenedorTotal .vemosTexto .vemos .containerProjectss .divTarea .descDate {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.contenedorTotal .vemosTexto .vemos .container .divTarea .descDate .descTask, .contenedorTotal .vemosTexto .vemos .containerToday .divTarea .descDate .descTask, .contenedorTotal .vemosTexto .vemos .containerProjectss .divTarea .descDate .descTask {
+  min-width: 80%;
+  max-width: 80%;
+}
+
+.contenedorTotal .vemosTexto .vemos .container .divTarea .descDate .dateTask, .contenedorTotal .vemosTexto .vemos .containerToday .divTarea .descDate .dateTask, .contenedorTotal .vemosTexto .vemos .containerProjectss .divTarea .descDate .dateTask {
+  min-width: 20%;
+}
+
+.contenedorTotal .vemosTexto .vemos .container .divTarea .btnDiv, .contenedorTotal .vemosTexto .vemos .containerToday .divTarea .btnDiv, .contenedorTotal .vemosTexto .vemos .containerProjectss .divTarea .btnDiv {
+  min-width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedorTotal .vemosTexto .vemos .container .divTarea .btnDiv p :hover, .contenedorTotal .vemosTexto .vemos .containerToday .divTarea .btnDiv p :hover, .contenedorTotal .vemosTexto .vemos .containerProjectss .divTarea .btnDiv p :hover {
+  color: #ccc;
+}
+
+.contenedorTotal .vemosTexto .vemos .containerProjectss {
+  padding-top: 0px;
+}
+
+.contenedorTotal .vemosTexto .vemos .divProject {
+  background-color: RED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 3rem;
+}
+
+.contenedorTotal .vemosTexto .vemos .divProject h2 {
+  font-size: 3rem;
+}
+
+.contenedorTotal .vemosTexto .vemos .divProject p {
+  font-size: 1.7rem;
+  color: white;
+}
+
+.contenedorTotal .vemosTexto .vemos .divProject p :hover {
+  color: #ccc;
+}
+
+.contenedorTotal .vemosTexto .vemos .completeTask {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 750px) {
+  .contenedorTotal .forms-barra {
+    margin-top: 0.5rem;
+    right: 10%;
+    position: absolute;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.4rem;
+    z-index: 500;
+  }
+  .contenedorTotal .forms-barra :hover {
+    color: #ccc;
+  }
+  .contenedorTotal .barraColor {
+    color: #eee;
+  }
+  .contenedorTotal .formsPrincpales {
+    position: relative;
+    width: 100%;
+    left: -300px;
+    margin-right: 25%;
+    padding: 10% 10%;
+    z-index: 250;
+    background-color: red;
+    -webkit-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+  }
+  .contenedorTotal .formsPrincpales-oculto {
+    left: 0px;
+    -webkit-transition: all 0.6s linear;
+    transition: all 0.6s linear;
+  }
+  .contenedorTotal .vemosTexto {
+    position: absolute;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+  .contenedorTotal .colorActive {
+    opacity: 0.4;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+  .contenedorTotal .container .divTarea, .contenedorTotal .containerToday .divTarea, .contenedorTotal .containerProjectss .divTarea {
+    padding: 0.5rem;
+    margin-left: 2rem !important;
+    width: 80%;
+    height: auto;
+  }
+  .contenedorTotal .container .divTarea h2, .contenedorTotal .containerToday .divTarea h2, .contenedorTotal .containerProjectss .divTarea h2 {
+    margin: -10px;
+    padding: 0px;
+  }
+  .contenedorTotal .container .divTarea .miniCont, .contenedorTotal .containerToday .divTarea .miniCont, .contenedorTotal .containerProjectss .divTarea .miniCont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0.5rem 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contenedorTotal .container .divTarea .descDate, .contenedorTotal .containerToday .divTarea .descDate, .contenedorTotal .containerProjectss .divTarea .descDate {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .contenedorTotal .container .divTarea .descDate .descTask, .contenedorTotal .containerToday .divTarea .descDate .descTask, .contenedorTotal .containerProjectss .divTarea .descDate .descTask {
+    min-width: auto;
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+  }
+  .contenedorTotal .container .divTarea .descDate .dateTask, .contenedorTotal .containerToday .divTarea .descDate .dateTask, .contenedorTotal .containerProjectss .divTarea .descDate .dateTask {
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+  }
+  .contenedorTotal .container .divTarea .btnDiv, .contenedorTotal .containerToday .divTarea .btnDiv, .contenedorTotal .containerProjectss .divTarea .btnDiv {
+    min-width: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 0.5rem;
+  }
+  .contenedorTotal .container .divTarea .btnDiv p :hover, .contenedorTotal .containerToday .divTarea .btnDiv p :hover, .contenedorTotal .containerProjectss .divTarea .btnDiv p :hover {
+    color: #ccc;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
