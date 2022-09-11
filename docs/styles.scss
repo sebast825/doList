@@ -25,8 +25,8 @@
 		padding-top: 1.5rem;
 		background-color: #f32;
 		align-items: center;
-		border-right: white 2px;
-		border-style:groove;
+		// border-right: white 2px;
+		// border-style:groove;
 		
 		.titleForms{
 			margin-top: -1rem;
@@ -59,10 +59,11 @@
 		
 		}
 
-		.tareasSelect, .todaySelect, .allProjects{
+		.tareasSelect, .todaySelect, .allProjects,.atr{
 			border-bottom:  solid white;
 			border-right:none ;
 			border-left: none;
+			min-width: 10rem;
 			padding: 1rem 1rem;	
 			padding-bottom:0 ;		
 			margin-left: -0.5rem;
