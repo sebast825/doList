@@ -375,13 +375,13 @@ $grey: #ccc;
 			z-index: 250;
 			
 			background-color: $dark;
-			transition:  all 0.6s ease-in;
+			transition:  all 0.2s ease-in;
 		}
 		.formsPrincpales-oculto{
 			
 			 left: 0px;
 			
-			transition:  all 0.6s linear;
+			transition:  all 0.3s ease-out;
 		
 			
 		}
