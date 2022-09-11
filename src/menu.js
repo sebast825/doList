@@ -16,4 +16,10 @@ function showMenu(){
 	
 }
 
+function hideMenu(){
+	if(formsPrincpales.classList.contains('formsPrincpales-oculto')){
+		showMenu()
+	}
+}
 exports.showMenu = showMenu;
+exports.hideMenu = hideMenu;
