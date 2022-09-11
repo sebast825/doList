@@ -14,7 +14,8 @@
     display: flex;
     flex-direction: column;
     padding-top: 1.5rem;
-    background-color: #f32;
+    background-color: #334433;
+    color: #ccc;
     align-items: center; }
     .contenedorTotal .formsPrincpales .titleForms {
       margin-top: -1rem;
@@ -36,7 +37,7 @@
       text-decoration: none;
       text-transform: none;
       color: black; }
-    .contenedorTotal .formsPrincpales .tareasSelect, .contenedorTotal .formsPrincpales .todaySelect, .contenedorTotal .formsPrincpales .allProjects, .contenedorTotal .formsPrincpales .atr {
+    .contenedorTotal .formsPrincpales .tareasSelect, .contenedorTotal .formsPrincpales .todaySelect, .contenedorTotal .formsPrincpales .allProjects, .contenedorTotal .formsPrincpales .containerAllPorjects {
       border-bottom: solid white;
       border-right: none;
       border-left: none;
@@ -45,17 +46,13 @@
       padding-bottom: 0;
       margin-left: -0.5rem;
       padding-bottom: 0.3rem; }
-      .contenedorTotal .formsPrincpales .tareasSelect :hover, .contenedorTotal .formsPrincpales .todaySelect :hover, .contenedorTotal .formsPrincpales .allProjects :hover, .contenedorTotal .formsPrincpales .atr :hover {
+      .contenedorTotal .formsPrincpales .tareasSelect :hover, .contenedorTotal .formsPrincpales .todaySelect :hover, .contenedorTotal .formsPrincpales .allProjects :hover, .contenedorTotal .formsPrincpales .containerAllPorjects :hover {
         color: #fff; }
     .contenedorTotal .formsPrincpales .allProjects {
       border: none; }
-    .contenedorTotal .formsPrincpales .class {
-      background-color: #4be;
-      color: black;
-      border: solid white;
-      border-radius: 10px; }
+      .contenedorTotal .formsPrincpales .allProjects h2 {
+        margin-left: -7px; }
     .contenedorTotal .formsPrincpales .containerProjectssSelect {
-      border-bottom: solid white;
       max-height: 7rem;
       overflow: hidden;
       overflow-y: scroll;
@@ -82,7 +79,7 @@
       border-bottom: 1px solid white;
       overflow-x: hidden; }
       .contenedorTotal .formsPrincpales .divProjectSelect :hover {
-        color: white; }
+        color: #018DF2; }
   .contenedorTotal .formsSecundarios .formularioEdit,
   .contenedorTotal .formsSecundarios .tareaProject {
     visibility: hidden;
@@ -136,7 +133,7 @@
     display: flex;
     flex-direction: row; }
     .contenedorTotal .vemosTexto .vemos {
-      background-color: black;
+      background-color: #018DF2;
       width: 100%;
       height: 100%;
       position: relative; }
@@ -148,7 +145,6 @@
         padding-top: 3rem;
         padding-bottom: 3rem;
         position: absolute;
-        background-color: #4be;
         overflow: hidden;
         overflow-y: scroll;
         scroll-behavior: smooth;
@@ -228,7 +224,7 @@
     margin-right: 25%;
     padding: 10% 10%;
     z-index: 250;
-    background-color: red;
+    background-color: #334433;
     transition: all 0.6s ease-in; }
   .contenedorTotal .formsPrincpales-oculto {
     left: 0px;
