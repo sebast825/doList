@@ -127,7 +127,29 @@
       top: 0;
       bottom: 0;
       left: 0;
-      right: 0; }
+      right: 0;
+      position: relative; }
+      .contenedorTotal .formsSecundarios .formulario .inForm .closeX::before, .contenedorTotal .formsSecundarios .formulario .inForm .closeX::after,
+      .contenedorTotal .formsSecundarios .formularioEdit .inForm .closeX::before,
+      .contenedorTotal .formsSecundarios .formularioEdit .inForm .closeX::after,
+      .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX::before,
+      .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX::after {
+        content: "";
+        width: 1.3rem;
+        height: 2px;
+        position: absolute;
+        font-weight: 600;
+        right: 10px;
+        cursor: pointer;
+        background-color: white; }
+      .contenedorTotal .formsSecundarios .formulario .inForm .closeX::before,
+      .contenedorTotal .formsSecundarios .formularioEdit .inForm .closeX::before,
+      .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX::before {
+        transform: rotate(45deg); }
+      .contenedorTotal .formsSecundarios .formulario .inForm .closeX::after,
+      .contenedorTotal .formsSecundarios .formularioEdit .inForm .closeX::after,
+      .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX::after {
+        transform: rotate(-45deg); }
       .contenedorTotal .formsSecundarios .formulario .inForm label,
       .contenedorTotal .formsSecundarios .formularioEdit .inForm label,
       .contenedorTotal .formsSecundarios .tareaProject .inForm label {

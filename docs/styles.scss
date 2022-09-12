@@ -208,6 +208,28 @@ $scaleSize: 2;
 			bottom: 0;
 			left: 0;
 			right: 0;
+			position: relative;
+			.closeX{
+			
+				&::before,&::after{
+					content: "";
+					width: 1.3rem;
+					height: 2px;
+					position: absolute;
+					font-weight: 600;
+					right: 10px;
+					cursor: pointer;
+					background-color: white;					
+				}				
+				&::before{
+					transform:rotate(45deg);				
+				}
+				&::after{
+					transform:rotate(-45deg);
+
+				}
+			
+			}
 			label{
 				align-self: flex-start;
 				
