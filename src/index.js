@@ -9,10 +9,20 @@ const formularioEditBtn = document.querySelector('.formularioEdit-btn');
 const vemosTexto = document.querySelector('.vemosTexto');
 const tareasSelect = document.querySelector('.tareasSelect');
 const todaySelect = document.querySelector('.todaySelect');
-const containerProjectssSelect = document.querySelector('.containerProjectssSelect')
-const container = document.querySelector('.container')
-const createTask = document.querySelector('.createTask')
+const containerProjectssSelect = document.querySelector('.containerProjectssSelect');
+const container = document.querySelector('.container');
+const createTask = document.querySelector('.createTask');
+const closeForm = document.querySelectorAll('.closeForm');
 
+closeForm.forEach(crose =>{
+	crose.addEventListener('click',()=>{
+		console.log('asd')
+		document.formulario.style.visibility = 'hidden';
+		document.formularioEdit.style.visibility = 'hidden';
+		document.createProject.style.visibility = 'hidden';
+	})
+
+})
 createTask.addEventListener('click',()=>{
 	document.formulario.style.visibility = 'visible'
 })
