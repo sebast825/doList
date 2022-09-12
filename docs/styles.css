@@ -100,7 +100,8 @@
         color: #018DF2; }
   .contenedorTotal .formsSecundarios .formulario,
   .contenedorTotal .formsSecundarios .formularioEdit,
-  .contenedorTotal .formsSecundarios .tareaProject {
+  .contenedorTotal .formsSecundarios .tareaProject,
+  .contenedorTotal .formsSecundarios .createProject {
     visibility: hidden;
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
@@ -115,7 +116,8 @@
     z-index: 50; }
     .contenedorTotal .formsSecundarios .formulario .inForm,
     .contenedorTotal .formsSecundarios .formularioEdit .inForm,
-    .contenedorTotal .formsSecundarios .tareaProject .inForm {
+    .contenedorTotal .formsSecundarios .tareaProject .inForm,
+    .contenedorTotal .formsSecundarios .createProject .inForm {
       border: 2px solid white;
       background-color: #018DF2;
       padding: 1rem;
@@ -131,7 +133,8 @@
       position: relative; }
       .contenedorTotal .formsSecundarios .formulario .inForm .closeX,
       .contenedorTotal .formsSecundarios .formularioEdit .inForm .closeX,
-      .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX {
+      .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX,
+      .contenedorTotal .formsSecundarios .createProject .inForm .closeX {
         width: 10rem;
         height: 3rem;
         position: absolute;
@@ -141,7 +144,9 @@
         .contenedorTotal .formsSecundarios .formularioEdit .inForm .closeX::before,
         .contenedorTotal .formsSecundarios .formularioEdit .inForm .closeX::after,
         .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX::before,
-        .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX::after {
+        .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX::after,
+        .contenedorTotal .formsSecundarios .createProject .inForm .closeX::before,
+        .contenedorTotal .formsSecundarios .createProject .inForm .closeX::after {
           content: "";
           width: 1.3rem;
           height: 2px;
@@ -152,23 +157,28 @@
           background-color: white; }
         .contenedorTotal .formsSecundarios .formulario .inForm .closeX::before,
         .contenedorTotal .formsSecundarios .formularioEdit .inForm .closeX::before,
-        .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX::before {
+        .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX::before,
+        .contenedorTotal .formsSecundarios .createProject .inForm .closeX::before {
           transform: rotate(45deg); }
         .contenedorTotal .formsSecundarios .formulario .inForm .closeX::after,
         .contenedorTotal .formsSecundarios .formularioEdit .inForm .closeX::after,
-        .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX::after {
+        .contenedorTotal .formsSecundarios .tareaProject .inForm .closeX::after,
+        .contenedorTotal .formsSecundarios .createProject .inForm .closeX::after {
           transform: rotate(-45deg); }
       .contenedorTotal .formsSecundarios .formulario .inForm label,
       .contenedorTotal .formsSecundarios .formularioEdit .inForm label,
-      .contenedorTotal .formsSecundarios .tareaProject .inForm label {
+      .contenedorTotal .formsSecundarios .tareaProject .inForm label,
+      .contenedorTotal .formsSecundarios .createProject .inForm label {
         align-self: flex-start; }
       .contenedorTotal .formsSecundarios .formulario .inForm input,
       .contenedorTotal .formsSecundarios .formularioEdit .inForm input,
-      .contenedorTotal .formsSecundarios .tareaProject .inForm input {
+      .contenedorTotal .formsSecundarios .tareaProject .inForm input,
+      .contenedorTotal .formsSecundarios .createProject .inForm input {
         width: 20rem; }
       .contenedorTotal .formsSecundarios .formulario .inForm button,
       .contenedorTotal .formsSecundarios .formularioEdit .inForm button,
-      .contenedorTotal .formsSecundarios .tareaProject .inForm button {
+      .contenedorTotal .formsSecundarios .tareaProject .inForm button,
+      .contenedorTotal .formsSecundarios .createProject .inForm button {
         width: 10rem; }
       .contenedorTotal .formsSecundarios .formulario .inForm input, .contenedorTotal .formsSecundarios .formulario .inForm textarea, .contenedorTotal .formsSecundarios .formulario .inForm .date,
       .contenedorTotal .formsSecundarios .formularioEdit .inForm input,
@@ -176,12 +186,16 @@
       .contenedorTotal .formsSecundarios .formularioEdit .inForm .date,
       .contenedorTotal .formsSecundarios .tareaProject .inForm input,
       .contenedorTotal .formsSecundarios .tareaProject .inForm textarea,
-      .contenedorTotal .formsSecundarios .tareaProject .inForm .date {
+      .contenedorTotal .formsSecundarios .tareaProject .inForm .date,
+      .contenedorTotal .formsSecundarios .createProject .inForm input,
+      .contenedorTotal .formsSecundarios .createProject .inForm textarea,
+      .contenedorTotal .formsSecundarios .createProject .inForm .date {
         align-self: flex-start;
         width: 100%; }
       .contenedorTotal .formsSecundarios .formulario .inForm .date,
       .contenedorTotal .formsSecundarios .formularioEdit .inForm .date,
-      .contenedorTotal .formsSecundarios .tareaProject .inForm .date {
+      .contenedorTotal .formsSecundarios .tareaProject .inForm .date,
+      .contenedorTotal .formsSecundarios .createProject .inForm .date {
         width: 8rem;
         align-self: flex-start; }
   .contenedorTotal .vemosTexto {

@@ -12,16 +12,20 @@ const todaySelect = document.querySelector('.todaySelect');
 const containerProjectssSelect = document.querySelector('.containerProjectssSelect');
 const container = document.querySelector('.container');
 const createTask = document.querySelector('.createTask');
+const createProjec = document.querySelector('.createProjec');
 const closeForm = document.querySelectorAll('.closeForm');
 
 closeForm.forEach(crose =>{
 	crose.addEventListener('click',()=>{
-		console.log('asd')
 		document.formulario.style.visibility = 'hidden';
 		document.formularioEdit.style.visibility = 'hidden';
 		document.createProject.style.visibility = 'hidden';
 	})
 
+})
+
+createProjec.addEventListener('click',()=>{
+	document.createProject.style.visibility = 'visible'
 })
 createTask.addEventListener('click',()=>{
 	document.formulario.style.visibility = 'visible'
