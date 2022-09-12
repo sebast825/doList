@@ -23,17 +23,21 @@
     background-color: #334433;
     color: #ccc;
     align-items: center; }
-    .contenedorTotal .formsPrincpales .crateContainer {
-      color: #ccc; }
-      .contenedorTotal .formsPrincpales .crateContainer .createElements {
-        display: flex;
-        gap: 1.3rem; }
-        .contenedorTotal .formsPrincpales .crateContainer .createElements i {
-          transform: scale(2); }
-      .contenedorTotal .formsPrincpales .crateContainer :hover {
-        color: white; }
-        .contenedorTotal .formsPrincpales .crateContainer :hover i {
-          animation: iRotate 0.5s ease-in !important; }
+    .contenedorTotal .formsPrincpales .createSection {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem; }
+      .contenedorTotal .formsPrincpales .createSection .crateContainer {
+        color: #ccc; }
+        .contenedorTotal .formsPrincpales .createSection .crateContainer .createElements {
+          display: flex;
+          gap: 1.3rem; }
+          .contenedorTotal .formsPrincpales .createSection .crateContainer .createElements i {
+            transform: scale(2); }
+        .contenedorTotal .formsPrincpales .createSection .crateContainer :hover {
+          color: white; }
+          .contenedorTotal .formsPrincpales .createSection .crateContainer :hover i {
+            animation: iRotate 0.5s ease-in !important; }
     .contenedorTotal .formsPrincpales .titleForms {
       margin-top: -1rem;
       width: 100%;

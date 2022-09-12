@@ -37,28 +37,35 @@ $scaleSize: 2;
 		color: $grey;
 
 		align-items: center;
-	.crateContainer{
-		color: $grey;
-	
-	.createElements{
-		display: flex;
-		gap: 1.3rem;
-
-		i{
-			transform: scale($scaleSize);
-		}
-	
-	}
-	:hover{
-		color: white;
-		i{
-
-		animation: iRotate .5s ease-in!important;
+		.createSection{
+			// background-color: red;
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			.crateContainer{
+				color: $grey;
+			
+			.createElements{
+				display: flex;
+				gap: 1.3rem;
 		
-
+				i{
+					transform: scale($scaleSize);
+				}
+			
+			}
+			:hover{
+				color: white;
+				i{
+		
+				animation: iRotate .5s ease-in!important;
+				
+		
+				}
+			}
+			}
 		}
-	}
-	}
+
 		
 		.titleForms{
 			margin-top: -1rem;
@@ -430,6 +437,7 @@ $scaleSize: 2;
 			
 			background-color: $dark;
 			transition:  all 0.2s ease-in;
+		
 			
 		}
 		
