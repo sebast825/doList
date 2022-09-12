@@ -33,7 +33,7 @@ function getFormulario(e){
 	localStorage.guardar_LocalStorage();
 	// divSelect.colocarTareaEn(info);
 	
-	
+	document.formulario.style.visibility = 'hidden'
 }
 
 function createProject(e){

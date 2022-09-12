@@ -11,7 +11,11 @@ const tareasSelect = document.querySelector('.tareasSelect');
 const todaySelect = document.querySelector('.todaySelect');
 const containerProjectssSelect = document.querySelector('.containerProjectssSelect')
 const container = document.querySelector('.container')
+const createTask = document.querySelector('.createTask')
 
+createTask.addEventListener('click',()=>{
+	document.formulario.style.visibility = 'visible'
+})
 
 document.formulario.addEventListener('submit',create.getFormulario);
 document.formularioEdit.addEventListener('submit',edit.actualziarDatos);

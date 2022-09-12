@@ -44,7 +44,6 @@
     .contenedorTotal .formsPrincpales .btn-principales {
       background-color: #fff;
       color: #000; }
-    .contenedorTotal .formsPrincpales .formulario,
     .contenedorTotal .formsPrincpales .createProject {
       display: flex;
       flex-direction: column;
@@ -99,6 +98,7 @@
       overflow-x: hidden; }
       .contenedorTotal .formsPrincpales .divProjectSelect :hover {
         color: #018DF2; }
+  .contenedorTotal .formsSecundarios .formulario,
   .contenedorTotal .formsSecundarios .formularioEdit,
   .contenedorTotal .formsSecundarios .tareaProject {
     visibility: hidden;
@@ -113,6 +113,7 @@
     left: 0;
     right: 0;
     z-index: 50; }
+    .contenedorTotal .formsSecundarios .formulario .inForm,
     .contenedorTotal .formsSecundarios .formularioEdit .inForm,
     .contenedorTotal .formsSecundarios .tareaProject .inForm {
       border: 2px solid white;
@@ -127,21 +128,28 @@
       bottom: 0;
       left: 0;
       right: 0; }
+      .contenedorTotal .formsSecundarios .formulario .inForm label,
       .contenedorTotal .formsSecundarios .formularioEdit .inForm label,
       .contenedorTotal .formsSecundarios .tareaProject .inForm label {
         align-self: flex-start; }
+      .contenedorTotal .formsSecundarios .formulario .inForm input,
       .contenedorTotal .formsSecundarios .formularioEdit .inForm input,
       .contenedorTotal .formsSecundarios .tareaProject .inForm input {
         width: 20rem; }
+      .contenedorTotal .formsSecundarios .formulario .inForm button,
       .contenedorTotal .formsSecundarios .formularioEdit .inForm button,
       .contenedorTotal .formsSecundarios .tareaProject .inForm button {
         width: 10rem; }
-      .contenedorTotal .formsSecundarios .formularioEdit .inForm input, .contenedorTotal .formsSecundarios .formularioEdit .inForm textarea, .contenedorTotal .formsSecundarios .formularioEdit .inForm .date,
+      .contenedorTotal .formsSecundarios .formulario .inForm input, .contenedorTotal .formsSecundarios .formulario .inForm textarea, .contenedorTotal .formsSecundarios .formulario .inForm .date,
+      .contenedorTotal .formsSecundarios .formularioEdit .inForm input,
+      .contenedorTotal .formsSecundarios .formularioEdit .inForm textarea,
+      .contenedorTotal .formsSecundarios .formularioEdit .inForm .date,
       .contenedorTotal .formsSecundarios .tareaProject .inForm input,
       .contenedorTotal .formsSecundarios .tareaProject .inForm textarea,
       .contenedorTotal .formsSecundarios .tareaProject .inForm .date {
         align-self: flex-end;
         width: 100%; }
+      .contenedorTotal .formsSecundarios .formulario .inForm .date,
       .contenedorTotal .formsSecundarios .formularioEdit .inForm .date,
       .contenedorTotal .formsSecundarios .tareaProject .inForm .date {
         width: 8rem;

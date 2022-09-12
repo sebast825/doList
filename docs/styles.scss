@@ -43,7 +43,7 @@ $scaleSize: 2;
 	.createElements{
 		display: flex;
 		gap: 1.3rem;
-		// font-size: 1.7rem;
+
 		i{
 			transform: scale($scaleSize);
 		}
@@ -78,7 +78,6 @@ $scaleSize: 2;
 			// border: 2px solid black;
 			
 		}
-		.formulario,
 		.createProject{
 			
 			display: flex;
@@ -177,7 +176,7 @@ $scaleSize: 2;
 	}
 
 	.formsSecundarios{
-
+		.formulario,
 		.formularioEdit,
 		.tareaProject{
 			visibility:hidden;

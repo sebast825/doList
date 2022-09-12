@@ -17,14 +17,8 @@
 		<div class="formsPrincpales ">
 			
 			<h2 class="titleForms">New Task </h2>
-			<div class="crateContainer"><span class="createElements"><i class="fas fa-plus"></i>New Task</span></div>
-			<!-- <a href="https://www.gstatic.com/images/icons/material/system_gm/1x/create_black_24dp.png"></a> -->
-			<form action="" name="formulario" class="formulario ">
-				<input type="text" name="nameTask" class="nameTask" placeholder="Name">
-				<textarea name="descTask" class="descTask" id="" cols="10" rows="3" placeholder="Description"></textarea>				
-				<input type="date" name="dateTask" class="dateTask">
-				<button type="submit"  class="btn-principales">Create</button>
-			</form>
+			<div class="crateContainer"><span class="createElements createTask"><i class="fas fa-plus"></i>New Task</span></div>
+			
 			<br>
 
 
@@ -51,6 +45,19 @@
 	
 	
 		<div class="formsSecundarios">
+			<form action="" name="formulario" class="formulario">
+				<div class="inForm">
+					<h2>New Task</h2>
+					<label for="nameTaskEdit">Name</label>
+
+				<input type="text" name="nameTask" class="nameTask" placeholder="Name">
+				<label for="descTaskEdit">Description</label>
+
+				<textarea name="descTask" class="descTask" id="" cols="53" rows="5" placeholder="Description"></textarea>				
+				<input type="date" name="dateTask" class="dateTask date">
+				<button type="submit"  class="btn-principales">Create</button>
+				</div>
+			</form>
 			<form action="" name="formularioEdit" class="formularioEdit">
 				<div class="inForm">
 				<div>
