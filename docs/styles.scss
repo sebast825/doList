@@ -1,6 +1,13 @@
 $body: #018DF2;
 $dark: #334433;
 $grey: #ccc;
+$scaleSize: 2;
+
+@keyframes iRotate{
+	0%{transform:rotateY(0deg)scale($scaleSize)
+	}
+	100%{transform: rotateY(180deg)scale($scaleSize)}
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -30,7 +37,28 @@ $grey: #ccc;
 		color: $grey;
 
 		align-items: center;
+	.crateContainer{
+		color: $grey;
+	
+	.createElements{
+		display: flex;
+		gap: 1.3rem;
+		// font-size: 1.7rem;
+		i{
+			transform: scale($scaleSize);
+		}
+	
+	}
+	:hover{
+		color: white;
+		i{
+
+		animation: iRotate .5s ease-in!important;
 		
+
+		}
+	}
+	}
 		
 		.titleForms{
 			margin-top: -1rem;
@@ -376,7 +404,9 @@ $grey: #ccc;
 			
 			background-color: $dark;
 			transition:  all 0.2s ease-in;
+			
 		}
+		
 		.formsPrincpales-oculto{
 			
 			 left: 0px;
@@ -460,3 +490,4 @@ $grey: #ccc;
 		
 	}
 }
+

@@ -1,3 +1,9 @@
+@keyframes iRotate {
+  0% {
+    transform: rotateY(0deg) scale(2); }
+  100% {
+    transform: rotateY(180deg) scale(2); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +23,17 @@
     background-color: #334433;
     color: #ccc;
     align-items: center; }
+    .contenedorTotal .formsPrincpales .crateContainer {
+      color: #ccc; }
+      .contenedorTotal .formsPrincpales .crateContainer .createElements {
+        display: flex;
+        gap: 1.3rem; }
+        .contenedorTotal .formsPrincpales .crateContainer .createElements i {
+          transform: scale(2); }
+      .contenedorTotal .formsPrincpales .crateContainer :hover {
+        color: white; }
+        .contenedorTotal .formsPrincpales .crateContainer :hover i {
+          animation: iRotate 0.5s ease-in !important; }
     .contenedorTotal .formsPrincpales .titleForms {
       margin-top: -1rem;
       width: 100%;
