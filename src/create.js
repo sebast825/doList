@@ -84,7 +84,6 @@ function verificarNombreProject(nameProject){
 
 function tareaProject(e){
 	e.preventDefault();
-	
 	tareaProjectDom.style.visibility = 'hidden'
 	let infoName = this.nameTareaProject.value;
 	if (infoName=='') {return alert('nombre invalido')}
@@ -120,16 +119,13 @@ function tareaProject(e){
 function createSelect(project){
 	let div = document.createElement('DIV');
 	let h2 = document.createElement('h2');
-	
 	div.classList.add('divProjectSelect')
 	div.classList.add(project.nameProject);
 	h2.innerText=  project.nameProject;
 	div.appendChild(h2);
 	div.addEventListener('click',()=>{		
 		divSelect.mostrarProjectss();
-		// let elem = this.mostrarProject
-		
-		// showTareaProject(elem.nameProject)
+	
 	
 			mostrarProject(project.nameProject);
 			showTareaProject(project);
