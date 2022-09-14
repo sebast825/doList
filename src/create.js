@@ -33,7 +33,7 @@ function getFormulario(e){
 	localStorage.guardar_LocalStorage();
 	// divSelect.colocarTareaEn(info);
 	
-	
+	document.formulario.style.visibility = 'hidden'
 }
 
 function createProject(e){
@@ -52,6 +52,8 @@ function createProject(e){
 	// console.log(project.createSelect())
 	 containerProjectssSelect.appendChild(createSelect(project.getLeer));
 	 localStorage.guardar_LocalStorageProject();
+	 document.createProject.style.visibility = 'hidden';
+
 }
 
 //recorre el array que se le pase para crear un id
