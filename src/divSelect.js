@@ -9,6 +9,9 @@ const tareasSelect = document.querySelector('.tareasSelect');
 const todaySelect = document.querySelector('.todaySelect');
 const allProjects = document.querySelector('.allProjects');
 
+const createTask = document.querySelector('.createTask');
+const createSection = document.querySelector('.createSection');
+
 function mostrar(){
 	container.style.visibility='hidden';
 	containerToday.style.visibility='hidden';
@@ -21,6 +24,12 @@ function mostrarTareas(){
 	mostrarTotalTareas();
 	activeSelect('tareas')
 	container.style.visibility='visible';
+	removeNewProjectTask();
+	
+}
+function removeNewProjectTask(){
+	createTask.closest('div').style.display = 'block';
+	createSection.firstChild.remove()
 }
 function mostrarToday(){
 	// e.preventDefault()
@@ -28,6 +37,7 @@ function mostrarToday(){
 	mostrarTotalToday();
 	activeSelect('today');
 	containerToday.style.visibility = 'visible';
+	removeNewProjectTask()
 
 }
 function mostrarProjectss(){
