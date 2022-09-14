@@ -10,7 +10,9 @@ const todaySelect = document.querySelector('.todaySelect');
 const allProjects = document.querySelector('.allProjects');
 
 const createTask = document.querySelector('.createTask');
+const createProjectTask = document.querySelector('.createProjectTask');
 const createSection = document.querySelector('.createSection');
+const formsPrincpales = document.querySelector('.formsPrincpales');
 
 function mostrar(){
 	container.style.visibility='hidden';
@@ -29,7 +31,12 @@ function mostrarTareas(){
 }
 function removeNewProjectTask(){
 	createTask.closest('div').style.display = 'block';
-	createSection.firstChild.remove()
+	console.log(createSection.children)
+	if (createSection.children.length >= 3){
+		createSection.firstChild.remove()
+	}
+	
+
 }
 function mostrarToday(){
 	// e.preventDefault()

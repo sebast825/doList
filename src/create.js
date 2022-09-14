@@ -230,7 +230,7 @@ function mostrarProject(nameProject){
 	cont.classList.add('divProject');
 	// console.log('jajaj')
 
-	btnAgregar.innerHTML='<span class="createElements createTask"><i class="fas fa-plus"></i>New Task</span>';
+	btnAgregar.innerHTML='<span class="createElements createTask createProjectTask"><i class="fas fa-plus"></i>New Task</span>';
 	btnEliminar.innerHTML ='<i class="fas fa-trash-alt"></i>';
 	// btnAgregar.setAttribute('type','submit')
 	cont.setAttribute('name',nameProject);
