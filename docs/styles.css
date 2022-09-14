@@ -1,8 +1,10 @@
 @keyframes iRotate {
   0% {
-    transform: rotateY(0deg) scale(2); }
+    transform: rotateY(0deg) rotateX(0deg) scale(1.5); }
+  50% {
+    transform: rotateX(90deg); }
   100% {
-    transform: rotateY(180deg) scale(2); } }
+    transform: rotateY(360deg) scale(1.5); } }
 
 * {
   margin: 0;
@@ -28,16 +30,17 @@
       flex-direction: column;
       gap: 1rem; }
       .contenedorTotal .formsPrincpales .createSection .crateContainer {
-        color: #ccc; }
+        color: #ccc;
+        cursor: pointer; }
         .contenedorTotal .formsPrincpales .createSection .crateContainer .createElements {
           display: flex;
           gap: 1.3rem; }
           .contenedorTotal .formsPrincpales .createSection .crateContainer .createElements i {
-            transform: scale(2); }
+            transform: scale(1.5); }
         .contenedorTotal .formsPrincpales .createSection .crateContainer :hover {
           color: white; }
           .contenedorTotal .formsPrincpales .createSection .crateContainer :hover i {
-            animation: iRotate 0.5s ease-in !important; }
+            animation: iRotate .4s !important; }
     .contenedorTotal .formsPrincpales .titleForms {
       margin-top: -1rem;
       width: 100%;
