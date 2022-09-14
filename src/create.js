@@ -11,6 +11,7 @@ const projectName = document.querySelector('.projectName');
 const tareaProjectDom = document.querySelector('.tareaProject');
 const createSection = document.querySelector('.createSection');
 const createTask = document.querySelector('.createTask');
+const formsPrincpales = document.querySelector('.formsPrincpales');
 function getFormulario(e){
 	e.preventDefault();
 	
@@ -228,7 +229,6 @@ function mostrarProject(nameProject){
 	let btnEliminar = document.createElement('P');
 	cont.classList.add('divProject');
 	// console.log('jajaj')
-	btnAgregar.innerHTML='<i class="fas fa-plus"></i>';
 
 	btnAgregar.innerHTML='<span class="createElements createTask"><i class="fas fa-plus"></i>New Task</span>';
 	btnEliminar.innerHTML ='<i class="fas fa-trash-alt"></i>';
@@ -238,7 +238,6 @@ function mostrarProject(nameProject){
 	h2.innerText = nameProject;
 	
 	cont.appendChild(h2);
-	cont.appendChild(btnAgregar);
 	cont.appendChild(btnEliminar);
 
 	
@@ -248,6 +247,8 @@ function mostrarProject(nameProject){
 		tareaProjectDom.style.visibility='visible';
 		projectName.innerText= nameProject;
 		localStorage.guardar_LocalStorage();
+		formsPrincpales.classList.remove('formsPrincpales-oculto');
+
 	})
 	btnEliminar.addEventListener('click',()=>{
 		
@@ -261,7 +262,7 @@ function mostrarProject(nameProject){
 	console.log(nameProject,'asd')
 	createSection.insertBefore(btnAgregar,createSection.firstChild);
 	//remove the father (the div, not the span, looks good in front end with this)
-	createTask.closest('div').style.display = 'none'
+	createTask.closest('div').style.display = 'none';
 }
 
 function recorrerAlmacenarProject(){
