@@ -9,6 +9,8 @@ const containerProjectssSelect = document.querySelector('.containerProjectssSele
 const containerProjectss = document.querySelector('.containerProjectss');
 const projectName = document.querySelector('.projectName');
 const tareaProjectDom = document.querySelector('.tareaProject');
+const createSection = document.querySelector('.createSection');
+const createTask = document.querySelector('.createTask');
 function getFormulario(e){
 	e.preventDefault();
 	
@@ -129,7 +131,7 @@ function createSelect(project){
 		divSelect.mostrarProjectss();
 	
 	
-			mostrarProject(project.nameProject);
+
 			showTareaProject(project);
 			menu.showMenu();
 		
@@ -144,6 +146,7 @@ function showTareaProject(project){
 	
 divSelect.mostrarProjectss();
 mostrarProject(project.nameProject);
+
    clases.almacenar.forEach(elem=>{
 	
 	   if(elem.project==project.nameProject){
@@ -220,11 +223,14 @@ function mostrarProject(nameProject){
 	
 	let cont = document.createElement('DIV');
 	let h2 = document.createElement('H2');
-	let btnAgregar = document.createElement('P');
+	let btnAgregar = document.createElement('DIV');
+	btnAgregar.classList.add('crateContainer');
 	let btnEliminar = document.createElement('P');
 	cont.classList.add('divProject');
 	// console.log('jajaj')
 	btnAgregar.innerHTML='<i class="fas fa-plus"></i>';
+
+	btnAgregar.innerHTML='<span class="createElements createTask"><i class="fas fa-plus"></i>New Task</span>';
 	btnEliminar.innerHTML ='<i class="fas fa-trash-alt"></i>';
 	// btnAgregar.setAttribute('type','submit')
 	cont.setAttribute('name',nameProject);
@@ -252,7 +258,10 @@ function mostrarProject(nameProject){
 	})
 
 	containerProjectss.appendChild(cont);
-	
+	console.log(nameProject,'asd')
+	createSection.insertBefore(btnAgregar,createSection.firstChild);
+	//remove the father (the div, not the span, looks good in front end with this)
+	createTask.closest('div').style.display = 'none'
 }
 
 function recorrerAlmacenarProject(){

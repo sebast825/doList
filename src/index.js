@@ -14,6 +14,14 @@ const container = document.querySelector('.container');
 const createTask = document.querySelector('.createTask');
 const createProjec = document.querySelector('.createProjec');
 const closeForm = document.querySelectorAll('.closeForm');
+const crateContainer = document.querySelectorAll('.crateContainer');
+const formsPrincpales = document.querySelector('.formsPrincpales ');
+
+crateContainer.forEach(elem=>{
+	elem.addEventListener('click',()=>{
+		formsPrincpales.classList.remove('formsPrincpales-oculto')
+	})
+})
 
 closeForm.forEach(crose =>{
 	crose.addEventListener('click',()=>{
