@@ -20,6 +20,7 @@ closeForm.forEach(crose =>{
 		document.formulario.style.visibility = 'hidden';
 		document.formularioEdit.style.visibility = 'hidden';
 		document.createProject.style.visibility = 'hidden';
+		document.tareaProject.style.visibility = "hidden";
 	})
 
 })
