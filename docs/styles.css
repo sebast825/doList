@@ -224,8 +224,7 @@
         padding-bottom: 3rem;
         position: absolute;
         overflow: hidden;
-        overflow-y: scroll;
-        scroll-behavior: smooth;
+        overflow-y: auto;
         /* Track */
         /* Handle */
         /* Handle on hover */ }
