@@ -130,7 +130,7 @@ function createSelect(project){
 		divSelect.mostrarProjectss();
 	
 	
-			mostrarProject(project.nameProject);
+
 			showTareaProject(project);
 			menu.showMenu();
 		
@@ -144,6 +144,7 @@ function createSelect(project){
 function showTareaProject(project){
 	
 divSelect.mostrarProjectss();
+mostrarProject(project.nameProject);
 
    clases.almacenar.forEach(elem=>{
 	
@@ -253,7 +254,7 @@ function mostrarProject(nameProject){
 	})
 
 	containerProjectss.appendChild(cont);
-	console.log(nameProject)
+	console.log(nameProject,'asd')
 	createSection.appendChild(btnAgregar)
 }
 
