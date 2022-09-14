@@ -9,6 +9,7 @@ const containerProjectssSelect = document.querySelector('.containerProjectssSele
 const containerProjectss = document.querySelector('.containerProjectss');
 const projectName = document.querySelector('.projectName');
 const tareaProjectDom = document.querySelector('.tareaProject');
+const createSection = document.querySelector('.createSection');
 function getFormulario(e){
 	e.preventDefault();
 	
@@ -143,7 +144,7 @@ function createSelect(project){
 function showTareaProject(project){
 	
 divSelect.mostrarProjectss();
-mostrarProject(project.nameProject);
+
    clases.almacenar.forEach(elem=>{
 	
 	   if(elem.project==project.nameProject){
@@ -252,7 +253,8 @@ function mostrarProject(nameProject){
 	})
 
 	containerProjectss.appendChild(cont);
-	
+	console.log(nameProject)
+	createSection.appendChild(btnAgregar)
 }
 
 function recorrerAlmacenarProject(){
