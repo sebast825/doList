@@ -263,6 +263,7 @@ function mostrarProject(nameProject){
 	createSection.insertBefore(btnAgregar,createSection.firstChild);
 	//remove the father (the div, not the span, looks good in front end with this)
 	createTask.closest('div').style.display = 'none';
+	divSelect.removeNewProjectTask()
 }
 
 function recorrerAlmacenarProject(){
