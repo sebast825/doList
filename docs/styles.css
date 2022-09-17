@@ -81,7 +81,7 @@
     .contenedorTotal .formsPrincpales .containerProjectssSelect {
       max-height: 7rem;
       overflow: hidden;
-      overflow-y: scroll;
+      overflow-y: auto;
       scroll-behavior: smooth;
       /* Track */
       /* Handle */
