@@ -27,16 +27,14 @@ function mostrarTareas(){
 	activeSelect('tareas')
 	container.style.visibility='visible';
 	removeNewProjectTask();
-	
+	createTask.closest('div').style.display = 'block';
+
 }
 function removeNewProjectTask(){
-	createTask.closest('div').style.display = 'block';
 	console.log(createSection.children)
 	if (createSection.children.length >= 3){
 		createSection.firstChild.remove()
 	}
-	
-
 }
 function mostrarToday(){
 	// e.preventDefault()
@@ -45,6 +43,7 @@ function mostrarToday(){
 	activeSelect('today');
 	containerToday.style.visibility = 'visible';
 	removeNewProjectTask()
+	createTask.closest('div').style.display = 'block';
 
 }
 function mostrarProjectss(){

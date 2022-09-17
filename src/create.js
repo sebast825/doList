@@ -257,13 +257,13 @@ function mostrarProject(nameProject){
 		localStorage.guardar_LocalStorageProject();
 		recorrerAlmacenarProject();
 	})
+	divSelect.removeNewProjectTask()
 
 	containerProjectss.appendChild(cont);
 	console.log(nameProject,'asd')
 	createSection.insertBefore(btnAgregar,createSection.firstChild);
 	//remove the father (the div, not the span, looks good in front end with this)
 	createTask.closest('div').style.display = 'none';
-	divSelect.removeNewProjectTask()
 }
 
 function recorrerAlmacenarProject(){
