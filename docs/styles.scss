@@ -49,6 +49,7 @@ $scaleSize: 1.5;
 			.crateContainer{
 				color: $grey;
 				cursor: pointer;
+				font-size: 1.3rem;
 			.createElements{
 				display: flex;
 				gap: 1.3rem;
@@ -106,16 +107,21 @@ $scaleSize: 1.5;
 		.tareasSelect, .todaySelect, .allProjects,.containerAllPorjects{
 			border-bottom:  solid white;
 			border-right:none ;
-			border-left: none;
+			border-left: 5px solid;
 			min-width: 10rem;
 			padding: 1rem 1rem;	
 			padding-bottom:0 ;		
 			margin-left: -0.5rem;
 			padding-bottom: 0.3rem;			
+
 			:hover{
 				color: #fff;
 			}
 		} 
+		.title{
+			font-size: 2rem;
+
+		}
 		.allProjects{
 			border: none;
 			h2{
@@ -138,7 +144,7 @@ $scaleSize: 1.5;
 			overflow: hidden;
 			
 			
-				overflow-y:scroll;
+				overflow-y:auto;
 		
 			scroll-behavior: smooth;
 			/* Track */

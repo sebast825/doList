@@ -57,15 +57,15 @@ function mostrarProjectss(){
 }
 
 function activeSelect(elem){
-	tareasSelect.classList.remove('class');
-	todaySelect.classList.remove('class');	
-	allProjects.classList.remove('class');
+	tareasSelect.firstChild.classList.remove('class');
+	todaySelect.firstChild.classList.remove('class');	
+	allProjects.firstChild.classList.remove('class');
 	if(elem=="tareas"){
-		tareasSelect.classList.add('class');
+		tareasSelect.firstChild.classList.add('class');
 	}else if(elem=="today"){
-		todaySelect.classList.add('class');
+		todaySelect.firstChild.classList.add('class');
 	}else if(elem=="project"){
-		allProjects.classList.add('class');
+		allProjects.firstChild.classList.add('class');
 	}else{
 		console.log('errro colorSelect');
 	}

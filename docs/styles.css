@@ -32,7 +32,8 @@
       gap: 1rem; }
       .contenedorTotal .formsPrincpales .createSection .crateContainer {
         color: #ccc;
-        cursor: pointer; }
+        cursor: pointer;
+        font-size: 1.3rem; }
         .contenedorTotal .formsPrincpales .createSection .crateContainer .createElements {
           display: flex;
           gap: 1.3rem; }
@@ -64,7 +65,7 @@
     .contenedorTotal .formsPrincpales .tareasSelect, .contenedorTotal .formsPrincpales .todaySelect, .contenedorTotal .formsPrincpales .allProjects, .contenedorTotal .formsPrincpales .containerAllPorjects {
       border-bottom: solid white;
       border-right: none;
-      border-left: none;
+      border-left: 5px solid;
       min-width: 10rem;
       padding: 1rem 1rem;
       padding-bottom: 0;
@@ -72,6 +73,8 @@
       padding-bottom: 0.3rem; }
       .contenedorTotal .formsPrincpales .tareasSelect :hover, .contenedorTotal .formsPrincpales .todaySelect :hover, .contenedorTotal .formsPrincpales .allProjects :hover, .contenedorTotal .formsPrincpales .containerAllPorjects :hover {
         color: #fff; }
+    .contenedorTotal .formsPrincpales .title {
+      font-size: 2rem; }
     .contenedorTotal .formsPrincpales .allProjects {
       border: none; }
       .contenedorTotal .formsPrincpales .allProjects h2 {
@@ -81,7 +84,7 @@
     .contenedorTotal .formsPrincpales .containerProjectssSelect {
       max-height: 7rem;
       overflow: hidden;
-      overflow-y: scroll;
+      overflow-y: auto;
       scroll-behavior: smooth;
       /* Track */
       /* Handle */
