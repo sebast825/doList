@@ -6,9 +6,10 @@ const projectNameEdit = document.querySelector('.projectNameEdit');
 const localStorage = require('./localStorage')
 const showProject = document.querySelector('.showProject');
 
+let projectId = undefined;
 
 function editHijo(elem){
-
+console.log(elem)
 	//si la tarea tiene un Projecto aparece el nombre del projecto
 	projectNameEdit.innerText= elem.project;
 	if(elem.project == undefined){
@@ -20,7 +21,7 @@ function editHijo(elem){
 		projectNameEdit.style.display = 'flex';
 	}
 	let form = document.formularioEdit;
-	// guardarId= elem.numId
+	projectId = elem.numId;
 	form.nameTaskEdit.value = elem.title;
 	form.descTaskEdit.value = elem.desc;
 	form.dateTaskEdit.value = elem.dueDate;
@@ -30,10 +31,12 @@ function editHijo(elem){
 //edita el elemento guardado
 function actualziarDatos(e){
 	let form = document.formularioEdit;
+	console.log(e)
 	e.preventDefault();
 	clases.almacenar.forEach(elem=>{
-		if(elem.numId==projectNameEdit.innerHTML){
-
+		console.log(elem)
+		
+		if(elem.numId==projectId){
 			elem.title = form.nameTaskEdit.value;
 			elem.desc = form.descTaskEdit.value;
 			elem.dueDate = form.dateTaskEdit.value;
