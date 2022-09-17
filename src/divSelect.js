@@ -151,4 +151,4 @@ function bsucarPorjecto(name){
 	})
 }
 
-module.exports={mostrarTareas,mostrarToday,mostrarProjectss,colocarTareaEnActualizado, insertarDom}
+module.exports={mostrarTareas,mostrarToday,mostrarProjectss,colocarTareaEnActualizado, insertarDom,removeNewProjectTask}
