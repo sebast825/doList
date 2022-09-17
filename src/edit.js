@@ -4,12 +4,21 @@ const create = require('./create');
 const divSelect = require('./divSelect');
 const projectNameEdit = document.querySelector('.projectNameEdit');
 const localStorage = require('./localStorage')
+const showProject = document.querySelector('.showProject');
 
 
 function editHijo(elem){
 
 	//si la tarea tiene un Projecto aparece el nombre del projecto
 	projectNameEdit.innerText= elem.project;
+	if(elem.project == undefined){
+		showProject.innerHTML = 'Edit'
+		projectNameEdit.style.display = 'none';
+
+	}else{
+		showProject.innerHTML = 'Project:'
+		projectNameEdit.style.display = 'flex';
+	}
 	let form = document.formularioEdit;
 	// guardarId= elem.numId
 	form.nameTaskEdit.value = elem.title;
