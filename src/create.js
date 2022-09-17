@@ -200,7 +200,7 @@ if(elem.complete){
 
 }
 	btnCheck.addEventListener('click',()=>{
-		edit.actualizarCheckBox(elem)
+		
 		if(elem.complete){
 			console.log('cjeck');
 			elem.complete=false;
@@ -210,7 +210,9 @@ if(elem.complete){
 			elem.complete=true;
 			cont.classList.add('completeTask');
 		}
-	})
+		localStorage.guardar_LocalStorage()
+
+})
 	
 btnEdit.addEventListener('click',()=>{
 	formularioEdit.style.visibility='visible';

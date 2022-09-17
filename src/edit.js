@@ -53,19 +53,10 @@ localStorage.guardar_LocalStorage()
 document.formularioEdit.style.visibility = 'hidden';
 
 }
-function actualizarCheckBox(task){
-	clases.almacenar.forEach(elem=>{
-		console.log(elem.numId,task.numId)
-		
-		if(elem.numId==task.numId){
-			elem.complete = !elem.complete;
-			
-			localStorage.guardar_LocalStorage()
-	}})	
-}
+
+
 
 exports.actualziarDatos = actualziarDatos;
 
 exports.editHijo=editHijo;
 
-exports.actualizarCheckBox = actualizarCheckBox;
