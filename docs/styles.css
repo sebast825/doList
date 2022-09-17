@@ -125,6 +125,8 @@
     .contenedorTotal .formsSecundarios .formularioEdit .inForm,
     .contenedorTotal .formsSecundarios .tareaProject .inForm,
     .contenedorTotal .formsSecundarios .createProject .inForm {
+      min-width: 30%;
+      min-height: 10rem;
       border: 2px solid white;
       background-color: #018DF2;
       padding: 1rem;
