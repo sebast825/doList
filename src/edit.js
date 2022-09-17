@@ -27,6 +27,8 @@ console.log(elem)
 	form.dateTaskEdit.value = elem.dueDate;
 }
 
+
+
 //recibe los datos del formulario de edicion, 
 //edita el elemento guardado
 function actualziarDatos(e){
@@ -43,17 +45,27 @@ function actualziarDatos(e){
 			// console.log(elem.getLeer)
 		
 			divSelect.insertarDom(elem.project);
-	}}
-	
-
-	
+	}}	
 )
+
 localStorage.guardar_LocalStorage()
 
 document.formularioEdit.style.visibility = 'hidden';
 
-
 }
+function actualizarCheckBox(task){
+	clases.almacenar.forEach(elem=>{
+		console.log(elem.numId,task.numId)
+		
+		if(elem.numId==task.numId){
+			elem.complete = !elem.complete;
+			
+			localStorage.guardar_LocalStorage()
+	}})	
+}
+
 exports.actualziarDatos = actualziarDatos;
 
 exports.editHijo=editHijo;
+
+exports.actualizarCheckBox = actualizarCheckBox;

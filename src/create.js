@@ -192,8 +192,15 @@ miniCont.appendChild(descDateDiv);
 miniCont.appendChild(btnDiv);
 cont.appendChild(miniCont);
 
-if(elem.complete)btnCheck.checked=true
+if(elem.complete){
+	btnCheck.checked=true;
+	cont.classList.add('completeTask');
+}else{
+	cont.classList.remove('completeTask');
+
+}
 	btnCheck.addEventListener('click',()=>{
+		edit.actualizarCheckBox(elem)
 		if(elem.complete){
 			console.log('cjeck');
 			elem.complete=false;
