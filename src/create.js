@@ -12,6 +12,8 @@ const tareaProjectDom = document.querySelector('.tareaProject');
 const createSection = document.querySelector('.createSection');
 const createTask = document.querySelector('.createTask');
 const formsPrincpales = document.querySelector('.formsPrincpales');
+const containerToday = document.querySelector('.containerToday');
+
 function getFormulario(e){
 	e.preventDefault();
 	
@@ -225,6 +227,10 @@ btnDelete.addEventListener('click',()=>{
 	delet.removerHijo(elem.numId);
 	localStorage.guardar_LocalStorage();
 })	
+
+if(containerToday.style.visibility == 'visible'){
+	divSelect.mostrarToday()
+}
 
 return(cont)
 }
