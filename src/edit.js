@@ -7,9 +7,9 @@ const localStorage = require('./localStorage')
 
 
 function editHijo(elem){
-	
+
 	//si la tarea tiene un Projecto aparece el nombre del projecto
-	projectNameEdit.innerText= elem.numId;
+	projectNameEdit.innerText= elem.project;
 	let form = document.formularioEdit;
 	// guardarId= elem.numId
 	form.nameTaskEdit.value = elem.title;
@@ -22,9 +22,9 @@ function editHijo(elem){
 function actualziarDatos(e){
 	let form = document.formularioEdit;
 	e.preventDefault();
-	//  console.log(clases.almacenar);
 	clases.almacenar.forEach(elem=>{
 		if(elem.numId==projectNameEdit.innerHTML){
+
 			elem.title = form.nameTaskEdit.value;
 			elem.desc = form.descTaskEdit.value;
 			elem.dueDate = form.dateTaskEdit.value;
